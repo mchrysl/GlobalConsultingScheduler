@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: linen;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportAppointmentsByTypeMonth">
+   <children>
+      <Label layoutX="21.0" layoutY="25.0" text="Global Consultants Report">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="60.0" text="Appointments by type and month">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="18.0" layoutY="85.0" prefHeight="5.0" prefWidth="560.0" style="-fx-background-color: black; -fx-border-color: black;" />
+      <Label layoutX="46.0" layoutY="110.0" text="January">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="110.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions1_Lbl" layoutX="275.0" layoutY="110.0" text="Label" />
+      <Label layoutX="150.0" layoutY="125.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings1_Lbl" layoutX="275.0" layoutY="125.0" text="Label" />
+      <Label layoutX="355.0" layoutY="110.0" text="Total Appointments:" />
+      <Label fx:id="total1_Lbl" layoutX="480.0" layoutY="110.0" text="Label" />
+
+      <Label layoutX="44.0" layoutY="162.0" text="February">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="162.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions2_Lbl" layoutX="275.0" layoutY="162.0" text="Label" />
+      <Label layoutX="150.0" layoutY="177.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings2_Lbl" layoutX="275.0" layoutY="177.0" text="Label" />
+      <Label layoutX="355.0" layoutY="162.0" text="Total Appointments:" />
+      <Label fx:id="total2_Lbl" layoutX="480.0" layoutY="162.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="214.0" text="March">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="214.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions3_Lbl" layoutX="275.0" layoutY="214.0" text="Label" />
+      <Label layoutX="150.0" layoutY="229.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings3_Lbl" layoutX="275.0" layoutY="229.0" text="Label" />
+      <Label layoutX="355.0" layoutY="214.0" text="Total Appointments:" />
+      <Label fx:id="total3_Lbl" layoutX="480.0" layoutY="214.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="266.0" text="April">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="266.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions4_Lbl" layoutX="275.0" layoutY="266.0" text="Label" />
+      <Label layoutX="150.0" layoutY="281.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings4_Lbl" layoutX="275.0" layoutY="281.0" text="Label" />
+      <Label layoutX="355.0" layoutY="266.0" text="Total Appointments:" />
+      <Label fx:id="total4_Lbl" layoutX="480.0" layoutY="266.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="317.0" text="May">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="317.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions5_Lbl" layoutX="275.0" layoutY="317.0" text="Label" />
+      <Label layoutX="150.0" layoutY="332.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings5_Lbl" layoutX="275.0" layoutY="332.0" text="Label" />
+      <Label layoutX="355.0" layoutY="317.0" text="Total Appointments:" />
+      <Label fx:id="total5_Lbl" layoutX="480.0" layoutY="317.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="370.0" text="June">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="370.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions6_Lbl" layoutX="275.0" layoutY="370.0" text="Label" />
+      <Label layoutX="150.0" layoutY="385.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings6_Lbl" layoutX="275.0" layoutY="385.0" text="Label" />
+      <Label layoutX="355.0" layoutY="370.0" text="Total Appointments:" />
+      <Label fx:id="total6_Lbl" layoutX="480.0" layoutY="370.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="422.0" text="July">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="422.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions7_Lbl" layoutX="275.0" layoutY="422.0" text="Label" />
+      <Label layoutX="150.0" layoutY="437.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings7_Lbl" layoutX="275.0" layoutY="437.0" text="Label" />
+      <Label layoutX="355.0" layoutY="422.0" text="Total Appointments:" />
+      <Label fx:id="total7_Lbl" layoutX="480.0" layoutY="422.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="474.0" text="August">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="474.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions8_Lbl" layoutX="275.0" layoutY="474.0" text="Label" />
+      <Label layoutX="150.0" layoutY="489.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings8_Lbl" layoutX="275.0" layoutY="489.0" text="Label" />
+      <Label layoutX="355.0" layoutY="474.0" text="Total Appointments:" />
+      <Label fx:id="total8_Lbl" layoutX="480.0" layoutY="474.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="526.0" text="September">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="526.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions9_Lbl" layoutX="275.0" layoutY="526.0" text="Label" />
+      <Label layoutX="150.0" layoutY="541.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings9_Lbl" layoutX="275.0" layoutY="541.0" text="Label" />
+      <Label layoutX="355.0" layoutY="526.0" text="Total Appointments:" />
+      <Label fx:id="total9_Lbl" layoutX="480.0" layoutY="526.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="578.0" text="October">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="578.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions10_Lbl" layoutX="275.0" layoutY="578.0" text="Label" />
+      <Label layoutX="150.0" layoutY="593.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings10_Lbl" layoutX="275.0" layoutY="593.0" text="Label" />
+      <Label layoutX="355.0" layoutY="578.0" text="Total Appointments:" />
+      <Label fx:id="total10_Lbl" layoutX="480.0" layoutY="578.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="630.0" text="November">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="630.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions11_Lbl" layoutX="275.0" layoutY="630.0" text="Label" />
+      <Label layoutX="150.0" layoutY="645.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings11_Lbl" layoutX="275.0" layoutY="645.0" text="Label" />
+      <Label layoutX="355.0" layoutY="630.0" text="Total Appointments:" />
+      <Label fx:id="total11_Lbl" layoutX="480.0" layoutY="630.0" text="Label" />
+
+      <Label layoutX="46.0" layoutY="692.0" text="December">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="692.0" text="Planning Sessions:" />
+      <Label fx:id="planningSessions12_Lbl" layoutX="275.0" layoutY="692.0" text="Label" />
+      <Label layoutX="150.0" layoutY="707.0" text="De-Briefings:" />
+      <Label fx:id="deBriefings12_Lbl" layoutX="275.0" layoutY="707.0" text="Label" />
+      <Label layoutX="355.0" layoutY="692.0" text="Total Appointments:" />
+      <Label fx:id="total12_Lbl" layoutX="480.0" layoutY="692.0" text="Label" />
+
+      <Button fx:id="closeReportBtn" cancelButton="true" layoutX="443.0" layoutY="758.0" mnemonicParsing="false" onAction="#closeReportButtonClicked" text="Close Report" />
+      <Separator layoutX="14.0" layoutY="739.0" prefHeight="5.0" prefWidth="571.0" style="-fx-border-color: black; -fx-background-color: black;" />
+
+   </children>
+</AnchorPane>

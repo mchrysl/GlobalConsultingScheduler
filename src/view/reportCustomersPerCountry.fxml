@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportCustomersPerCountryController">
+   <children>
+      <Label layoutX="62.0" layoutY="35.0" text="Global Consulting">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="70.0" text="Customers Per Country Report">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="32.0" layoutY="101.0" prefHeight="8.0" prefWidth="732.0" />
+      <Label layoutX="95.0" layoutY="131.0" text="United States:" />
+      <Label layoutX="95.0" layoutY="210.0" text="United Kingdom:" />
+      <Label layoutX="95.0" layoutY="297.0" text="Canada:" />
+      <Label layoutX="238.0" layoutY="131.0" text="Number of Customers:" />
+      <Label layoutX="238.0" layoutY="155.0" text="Percentage of Customers:" />
+      <Label layoutX="238.0" layoutY="210.0" text="Number of Customers:" />
+      <Label layoutX="238.0" layoutY="233.0" text="Percentage of Customers:" />
+      <Label layoutX="238.0" layoutY="297.0" text="Number of Customers:" />
+      <Label layoutX="238.0" layoutY="322.0" text="Percentage of Customers:" />
+      <Label fx:id="usCountLbl" layoutX="405.0" layoutY="131.0" text="Label" />
+      <Label fx:id="usPercentLbl" layoutX="405.0" layoutY="155.0" text="Label" />
+      <Label fx:id="ukCountLbl" layoutX="405.0" layoutY="210.0" text="Label" />
+      <Label fx:id="ukPercentLbl" layoutX="405.0" layoutY="233.0" text="Label" />
+      <Label fx:id="canadaCountLbl" layoutX="405.0" layoutY="297.0" text="Label" />
+      <Label fx:id="canadaPercentLbl" layoutX="405.0" layoutY="322.0" text="Label" />
+      <PieChart fx:id="customersPerCountryPieChart" layoutX="236.0" layoutY="385.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: honeydew; -fx-border-color: black; -fx-border-style: solid;" title="Percentage of Customers per Country" />
+      <Separator layoutX="38.0" layoutY="699.0" prefHeight="8.0" prefWidth="739.0" />
+      <Button fx:id="closeReportBtn" layoutX="629.0" layoutY="743.0" mnemonicParsing="false" onAction="#closeReportButtonClicked" text="Close Report" />
+   </children>
+</AnchorPane>

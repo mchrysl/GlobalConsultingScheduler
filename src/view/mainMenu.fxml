@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="630.0" style="-fx-background-color: lightGrey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <Rectangle id="CustomerRectangle" arcHeight="5.0" arcWidth="5.0" fill="#8cb0d440" height="200.0" layoutX="24.0" layoutY="105.0" stroke="BLACK" strokeDashOffset="1.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" width="573.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2d8e09c" height="200.0" layoutX="24.0" layoutY="331.0" stroke="BLACK" strokeType="INSIDE" width="574.0" />
+      <Label layoutX="36.0" layoutY="118.0" text="Customer Information" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="160.0" prefHeight="71.0" prefWidth="158.0" text="View, add, update, or delete customer information." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="345.0" text="Appointment Information" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eee9e0" height="134.0" layoutX="228.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE" width="204.0" />
+      <RadioButton fx:id="addCustomerRadioBtn" layoutX="240.0" layoutY="171.0" mnemonicParsing="false" text="Add Customers">
+         <toggleGroup>
+            <ToggleGroup fx:id="customerRadioGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="updateCustomerRadioBtn" layoutX="240.0" layoutY="201.0" mnemonicParsing="false" selected="true" text="Update Customers" toggleGroup="$customerRadioGroup" />
+      <RadioButton fx:id="deleteCustomerRadioBtn" layoutX="240.0" layoutY="233.0" mnemonicParsing="false" text="Delete Customers" toggleGroup="$customerRadioGroup" />
+      <Button fx:id="mainMenuCustomerBtn" layoutX="236.0" layoutY="259.0" mnemonicParsing="false" onAction="#customerInformationButtonClicked" text="Change Customer Information" />
+      <Label layoutX="59.0" layoutY="389.0" prefHeight="59.0" prefWidth="139.0" text="View, add, update, or delete appointments." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eee9e0" height="135.0" layoutX="224.0" layoutY="383.0" stroke="BLACK" strokeType="INSIDE" width="220.0" />
+      <RadioButton fx:id="addAppointmentRadioBtn" layoutX="240.0" layoutY="400.0" mnemonicParsing="false" text="Add Appointments">
+         <toggleGroup>
+            <ToggleGroup fx:id="appointmentRadioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="updateAppointmentRadioBtn" layoutX="240.0" layoutY="428.0" mnemonicParsing="false" selected="true" text="Update Appointments" toggleGroup="$appointmentRadioGroup" />
+      <RadioButton fx:id="deleteAppointmentRadioBtn" layoutX="241.0" layoutY="456.0" mnemonicParsing="false" text="Delete Appointments" toggleGroup="$appointmentRadioGroup" />
+      <Button fx:id="mainMenuAppointmentBtn" layoutX="235.0" layoutY="485.0" mnemonicParsing="false" onAction="#appointmentsButtonClicked" text="Change Appointment Information" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bad9cd8b" height="207.0" layoutX="24.0" layoutY="551.0" stroke="BLACK" strokeType="INSIDE" width="574.0" />
+      <Label layoutX="37.0" layoutY="565.0" text="Reports" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="612.0" prefHeight="50.0" prefWidth="139.0" text="Choose a report to run and view." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="mmAppointmentsRptsBtn" layoutX="241.0" layoutY="606.0" mnemonicParsing="false" onAction="#appointmentsTypeMonthButtonClicked" prefHeight="43.0" prefWidth="149.0" text="Customer Appointments by Type and Month" wrapText="true" />
+      <Button fx:id="mmContactsScheduleBtn" layoutX="240.0" layoutY="669.0" mnemonicParsing="false" onAction="#contactsSchedulesButtonClicked" prefHeight="25.0" prefWidth="149.0" text="Contacts' Schedules" />
+      <Button fx:id="mmMyReportBtn" layoutX="241.0" layoutY="714.0" mnemonicParsing="false" onAction="#customerPercentagesButtonClicked" prefHeight="25.0" prefWidth="149.0" text="Customers Per Country" />
+      <Button fx:id="exitProgramBtn" cancelButton="true" layoutX="436.0" layoutY="765.0" mnemonicParsing="false" onAction="#exitProgramButtonClicked" text="End Program &amp; Log out" />
+      <VBox layoutX="24.0" layoutY="14.0" prefHeight="59.0" prefWidth="245.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label prefHeight="35.0" prefWidth="224.0" text="Global Consultants">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Main Menu">
+               <VBox.margin>
+                  <Insets bottom="7.0" left="35.0" right="7.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
